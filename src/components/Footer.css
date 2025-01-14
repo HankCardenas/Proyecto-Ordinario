@@ -1,0 +1,47 @@
+.rockstar-footer {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #f8c200;
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 3px solid #f8c200;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    position: relative;
+  }
+  
+  .rockstar-footer p {
+    margin: 5px 0;
+  }
+  
+  .rockstar-footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.3s;
+  }
+  
+  .rockstar-footer a:hover {
+    color: #ffffff;
+  }
+  
+  .rockstar-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #f8c200, #e67e22, #c0392b);
+    animation: glow 3s infinite linear;
+  }
+  
+  @keyframes glow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
